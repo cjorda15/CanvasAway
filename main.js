@@ -77,3 +77,9 @@ ctx.beginPath()
 ctx.arc(10,45,55,0,Math.PI*2)
 ctx.strokeStyle = "orange"
 ctx.stroke()
+
+
+ctx.beginPath()
+ctx.arc(180,180,25,0,Math.PI*2)
+ctx.fillStyle ="blue"
+ctx.fill()
