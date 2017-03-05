@@ -20,8 +20,8 @@ function drawCircle() {
      // draw the circle
      mainContext.beginPath();
 
-     var radius = 25 + 150 * Math.abs(Math.cos(angle));
-     mainContext.arc(225, 225, radius, 0, Math.PI * 2, false);
+     var radius = 90 + 150 * Math.abs(Math.cos(angle));
+     mainContext.arc(canvasWidth/2, canvasHeight/2, radius, 0, Math.PI * 2, false);
      mainContext.closePath();
 
      // color in the circle
@@ -29,6 +29,55 @@ function drawCircle() {
      mainContext.fill();
      angle += Math.PI / 64;
 
+
+
+    //  mainContext.beginPath();
+    //  mainContext.arc(canvasWidth/4, canvasHeight/4, 20, radius, Math.PI * 2, false);
+    //  mainContext.closePath();
+    //  mainContext.fillStyle = "red";
+    //  mainContext.fill();
+
+     mainContext.beginPath();
+     mainContext.arc(canvasWidth/2, canvasHeight/2, radius/2, 0, Math.PI * 2, false);
+     mainContext.closePath();
+     mainContext.fillStyle = "purple";
+     mainContext.fill();
+
+     mainContext.beginPath();
+     mainContext.arc(canvasWidth/2, canvasHeight/2, radius/4, 0, Math.PI * 2, false);
+     mainContext.closePath();
+     mainContext.fillStyle = "red";
+     mainContext.fill();
+
+     mainContext.beginPath();
+     mainContext.arc(canvasWidth/2, canvasHeight/2, radius/10, 0, Math.PI * 2, false);
+     mainContext.closePath();
+     mainContext.fillStyle = "green";
+     mainContext.fill();
+
+     mainContext.beginPath();
+     mainContext.arc(canvasWidth/2, canvasHeight/2, radius/30, 0, Math.PI * 2, false);
+     mainContext.closePath();
+     mainContext.fillStyle = "black";
+     mainContext.fill();
+
+     mainContext.beginPath();
+     mainContext.arc(canvasWidth/2, canvasHeight/2, radius/50, 0, Math.PI * 2, false);
+     mainContext.closePath();
+     mainContext.fillStyle = "#006699";
+     mainContext.fill();
+
+     mainContext.beginPath();
+     mainContext.arc(canvasWidth/2, canvasHeight/2, radius/80, 0, Math.PI * 2, false);
+     mainContext.closePath();
+     mainContext.fillStyle = "purple";
+     mainContext.fill();
+
+     mainContext.beginPath();
+     mainContext.arc(canvasWidth/2, canvasHeight/2, radius/120, 0, Math.PI * 2, false);
+     mainContext.closePath();
+     mainContext.fillStyle = "red";
+     mainContext.fill();
 
      requestAnimationFrame(drawCircle);
 
